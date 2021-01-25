@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Value Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="calcValue.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <main id="main_content">
+            <div class="row">
+                <div class="col offset-2">
+                    <h2><a href="#">Why create an Account with us?</a></h2>
+                    <div class="description">
+                        <p>Creating an account with us allows you easily to easily send messages to the squirrels you
+                            see outside. Now, you don't have to say goodbye when you walk indoors!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col offset-2">
+                    <h2><a href="#">Why should you start talking to squirrels?</a></h2>
+                    <div class="description">
+                        <p>Squirrels are everywhere and they see a lot of what is going on in the world. It is
+                            probably a good idea to have a few squirrel friends when you are outside because
+                            if you are lost maybe that squirrel you saw knows the squirrels you talk to.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col offset-2">
+                    <h2><a href="#">We accept payment in acorns.</a></h2>
+                    <div class="description">
+                        <p>The value of currency around changes all the time. But with acorns we don't have to
+                            worry about their value going up or down! As long as there are trees that produce
+                            acorns we are confident an acorn will be with one acorn.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col offset-2">
+                    <h1>Create Account</h1>
+                </div>
+            </div>
+            <form action="register_account.html" method="get" name="registration_form" id="registration_form">
+            <div class="row">
+                <div class="col">
+                    <label for="email">E-Mail:</label>
+                    <input type="text" name="email" id="email">
+                    <span>*</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="phone">Mobile Phone:</label>
+                    <input type="text" name="phone" id="phone">
+                    <span>*</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="country">Country:</label>
+                    <select name="country" id="country">
+                        <option value="">Please select a country</option>
+                        <option value="">USA</option>
+                        <option value="">Canada</option>
+                        <option value="">Mexico</option>
+                    </select>
+                    <span>*</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label>Contact me by:</label>
+                    <input type="radio" name="contact" id="text" value="text" checked>Text
+                    <input type="radio" name="contact" id="email" value="text">Email
+                    <input type="radio" name="contact" id="none" value="none">Don't contact me
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label>Terms of Service:</label>
+                   <input type="checkbox" name="terms" id="terms" value="yes"> I accept
+                   <span>*</span>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col offset-3">
+                    <button type="button" id="register" class="btn btn-primary">Register</button>
+                    <button type="button" id="reset_form" class="btn btn-primary">Reset</button>
+                </div>
+            </div>
+        </form>
+        </main>
+    </div>
+</body>
+
+</html>
