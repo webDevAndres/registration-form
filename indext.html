@@ -11,7 +11,6 @@
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="js/toggle.js"></script>
     <script src="js/signup.js"></script>
 </head>
 
@@ -19,95 +18,98 @@
     <div class="container">
         <main id="main_content">
             <section id="intro">
-            <div class="row">
-                <div class="col offset-2">
-                    <h2><a href="#">Why create an Account with us?</a></h2>
-                    <div class="description">
-                        <p>Creating an account with us allows you easily to easily send messages to the squirrels you
-                            see outside. Now, you don't have to say goodbye when you walk indoors!
-                        </p>
+                <div class="row">
+                    <div class="col offset-2">
+                        <h2><a href="#">Why create an Account with us?</a></h2>
+                        <div class="description">
+                            <p>Creating an account with us allows you easily to easily send messages to the squirrels
+                                you
+                                see outside. Now, you don't have to say goodbye when you walk indoors!
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col offset-2">
-                    <h2><a href="#">Why should you start talking to squirrels?</a></h2>
-                    <div class="description">
-                        <p>Squirrels are everywhere and they see a lot of what is going on in the world. It is
-                            probably a good idea to have a few squirrel friends when you are outside because
-                            if you are lost maybe that squirrel you saw knows the squirrels you talk to.
-                        </p>
+                <div class="row">
+                    <div class="col offset-2">
+                        <h2><a href="#">Why should you start talking to squirrels?</a></h2>
+                        <div class="description">
+                            <p>Squirrels are everywhere and they see a lot of what is going on in the world. It is
+                                probably a good idea to have a few squirrel friends when you are outside because
+                                if you are lost maybe that squirrel you saw knows the squirrels you talk to.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col offset-2">
-                    <h2><a href="#">We accept payment in acorns.</a></h2>
-                    <div class="description">
-                        <p>Why do we accept payment in acorns?</p>
-                        <ul>
-                            <li>They are everywhere.</li>
-                            <li>Squirrels will always want to be paid in acorns.</li>
-                            <li>Acorns are environmentally safe and biodegradable.</li>
-                        </ul>
+                <div class="row">
+                    <div class="col offset-2">
+                        <h2><a href="#">We accept payment in acorns.</a></h2>
+                        <div class="description">
+                            <p>Why do we accept payment in acorns?</p>
+                            <ul>
+                                <li>They are everywhere.</li>
+                                <li>Squirrels will always want to be paid in acorns.</li>
+                                <li>Acorns are environmentally safe and biodegradable.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
             <div class="row">
                 <div class="col offset-2">
                     <h1>Create Account</h1>
                 </div>
             </div>
             <form action="register_account.html" method="get" name="registration_form" id="registration_form">
-            <div class="row">
-                <div class="col">
-                    <label for="email">E-Mail:</label>
-                    <input type="text" name="email" id="email">
-                    <span>*</span>
+                <div class="row">
+                    <div class="col">
+                        <label for="email_address">E-Mail:</label>
+                        <input type="text" name="email_address" id="email_address">
+                        <span>*</span>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <label for="phone">Mobile Phone:</label>
-                    <input type="text" name="phone" id="phone">
-                    <span>*</span>
+                <div class="row">
+                    <div class="col">
+                        <label for="phone">Mobile Phone:</label>
+                        <input type="text" name="phone" id="phone">
+                        <span>*</span>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <label for="country">Country:</label>
-                    <select name="country" id="country">
-                        <option value="">Please select a country</option>
-                        <option value="">USA</option>
-                        <option value="">Canada</option>
-                        <option value="">Mexico</option>
-                    </select>
-                    <span>*</span>
+                <div class="row">
+                    <div class="col">
+                        <label for="country">Country:</label>
+                        <select name="country" id="country">
+                            <option value="">Please select a country</option>
+                            <option>USA</option>
+                            <option>Canada</option>
+                            <option>Mexico</option>
+                        </select>
+                        <span>*</span>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <label>Contact me by:</label>
-                    <input type="radio" name="contact" id="text" value="text" checked>Text
-                    <input type="radio" name="contact" id="email" value="text">Email
-                    <input type="radio" name="contact" id="none" value="none">Don't contact me
+                <div class="row">
+                    <div class="col">
+                        <label>Contact me by:</label>
+                        <input type="radio" name="contact" id="text" value="text" checked>Text
+                        <input type="radio" name="contact" id="email" value="text">Email
+                        <input type="radio" name="contact" id="none" value="none">Don't contact me
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <label>Terms of Service:</label>
-                   <input type="checkbox" name="terms" id="terms" value="yes"> I accept
-                   <span>*</span>
+                <div class="row">
+                    <div class="col">
+                        <label>Terms of Service:</label>
+                        <input type="checkbox" name="terms" id="terms" value="yes"> I accept
+                        <span>*</span>
+                    </div>
                 </div>
-            </div>
-            <div class="row mt-5">
-                <div class="col offset-3">
-                    <button type="button" id="register" class="btn btn-primary">Register</button>
-                    <button type="button" id="reset_form" class="btn btn-primary">Reset</button>
+                <div class="row mt-5">
+                    <div class="col offset-3">
+                        <button type="button" id="register" class="btn btn-primary">Register</button>
+                        <button type="button" id="reset_form" class="btn btn-primary">Reset</button>
+                    </div>
                 </div>
-            </div>
-        </form>
+            </form>
+            <!-- <h2 id="registration_header">&nbsp;</h2>
+            <table id="registration_info"></table> -->
         </main>
     </div>
 </body>
