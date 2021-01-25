@@ -31,7 +31,4 @@ window.onload = function() {
     for (var i = 0; i < h2Elements.length; i++) {
         h2Elements[i].onclick = toggle;
     }
-
-    // set focus on first h2 tag
-    h2Elements[0].firstChild.focus();
 }
