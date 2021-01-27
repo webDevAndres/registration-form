@@ -4,7 +4,8 @@ var $ = function(id) {
 };
 
 var toggle = function() {
-    var h2 = this; // this refers to the clicked h2 tag
+    var link = this; // this refers to the clicked anchor tag
+    var h2 = link.parentNode; // h2 tag that contains a tag
     var div = h2.nextElementSibling; // div = h2's sibling div
 
     //toggle + and - image in h2 elements by adding or removing a class
@@ -35,10 +36,14 @@ var processEntries = function() {
     if($("email").checked) {
         contact = "Email";
     }
+    if($("mobile").checked) {
+        contact = "Mobile phone";
+    }
     if($("none").checked) {
         contact = "None";
     }
     var terms = $("terms").checked; // return a boolean value
+    var comments = $("comments").value;
 
     //check user entries for validity
     if (email == "") {
@@ -64,10 +69,11 @@ var processEntries = function() {
         html = html + "<tr><td>Country:</td><td>" + country + "</td></tr>";
         html = html + "<tr><td>Contact:</td><td>" + contact + "</td></tr>";
         html = html + "<tr><td>Terms:</td><td>" + terms + "</td></tr>";
+        html = html + "<tr><td>Comments:</td><td>" + comments.length + "</td></tr>";
         $("registration_info").innerHTML = html;
     } else {
         $("registration_info").innerHTML = "";
-        // $("registration_form").submit();
+        $("registration_form").submit();
     }
 };
 
@@ -88,10 +94,10 @@ window.onload = function() {
 
     // get the h2 tags
     var faqs = $("intro");
-    var h2Elements = faqs.getElementsByTagName("h2");
+    var linkElements = faqs.getElementsByTagName("a");
 
     //attach event handler for each h2 tag
-    for (var i = 0; i < h2Elements.length; i++) {
-        h2Elements[i].onclick = toggle;
+    for (var i = 0; i < linkElements.length; i++) {
+        linkElements[i].onclick = toggle;
     }
 }
