@@ -56,6 +56,10 @@ label {
   text-align: right;
 }
 
+textarea {
+  vertical-align: top;
+}
+
 
 span {
   color: #df0404;
